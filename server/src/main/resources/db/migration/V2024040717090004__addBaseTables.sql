@@ -1,0 +1,7 @@
+ALTER TABLE employees
+    ADD COLUMN job_title VARCHAR(50) NOT NULL;
+ALTER TABLE employees
+    ADD COLUMN city VARCHAR(50) NOT NULL;
+ALTER TABLE employees
+    ADD COLUMN country VARCHAR(50) NOT NULL;
+

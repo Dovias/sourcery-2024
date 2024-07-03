@@ -1,0 +1,2 @@
+ALTER TABLE stays
+  ALTER COLUMN apartment_id SET NOT NULL;

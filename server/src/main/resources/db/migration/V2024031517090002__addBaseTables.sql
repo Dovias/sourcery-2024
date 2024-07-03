@@ -1,0 +1,2 @@
+ALTER TABLE employees
+ALTER COLUMN password_hash TYPE VARCHAR(64);

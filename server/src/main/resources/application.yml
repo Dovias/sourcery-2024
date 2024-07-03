@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5433}/${POSTGRES_DB:postgres}?currentSchema=app
+    username: ${POSTGRES_USER:dbuser}
+    password: ${POSTGRES_PASSWORD:pass}
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    locations: classpath:db/migration
+    outOfOrder: true
+
+mybatis:
+  type-handlers-package: com.sourcery.oirs.config.mybatis
+  type-aliases-package: com.sourcery.oirs.config.mybatis
+  configuration:
+    map-underscore-to-camel-case: true

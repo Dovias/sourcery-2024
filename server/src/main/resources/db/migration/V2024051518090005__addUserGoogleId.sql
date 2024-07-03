@@ -1,0 +1,2 @@
+ALTER TABLE employees
+    ADD COLUMN googleId VARCHAR(50) DEFAULT '';

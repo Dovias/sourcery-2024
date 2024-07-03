@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;MODE=PostgreSQL
+    username: dbuser
+    password: pass
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    locations: classpath:db/migration
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
